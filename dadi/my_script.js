@@ -11,18 +11,13 @@ console.log(numAi);
 let textNumAi = document.getElementById("numeroAi")
 textNumAi.innerHTML = `il numero che è stato assegnato al pc tirando i dadi è: ${numAi}`;
 
+let winner = document.getElementById ("winner")
 
 //stabilire il vincitore in base a chi fa il punteggio più alto
-// if (numAi < numUser){
-//     const winContainer = document.createElement('div')
-//     const winUser = document.createElement('h1')
-//     winUser.append("Congratulazioni hai vinto!")
-//     winContainer.append(winUser)
-//     console.log(winUser, winContainer );
-// }
-
-if (numAi < numUser) {
-    let winUser;
-    winUser = `<h1>Grande hai vinto!</h1>`
-    console.log(winUser);
+if (numAi < numUser){
+    winner.innerHTML = `Complimenti hai vinto! :)`
+}else if (numAi > numUser){
+    winner.innerHTML = `Ti sei fatto battere dal pc :(`
+}else {
+    winner.innerHTML = `Pareggio`
 }
