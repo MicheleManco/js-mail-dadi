@@ -19,4 +19,6 @@ for (let i = 0; i < listaMail.length; i++ ){
 
 if (mailInLista === true) {
     trovata.innerHTML = `La tua mail è nella lista, nella posizione ${posizione}`
+}else {
+    trovata.innerHTML = `Mi dispiace ma la tua mail non è in lista`
 }
