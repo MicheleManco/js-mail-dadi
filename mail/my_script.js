@@ -10,7 +10,7 @@ let trovata = document.getElementById("trovata")
 
 let mailInLista = false; 
 let posizione;
-for (let i = 0; i < listaMail.length; i++ ){
+for (let i = 0; i < listaMail.length && mailInLista == false; i++ ){
     if (mailUser === listaMail[i]){
         mailInLista = true;
         posizione = i +1 
